@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Adafruit Alert Remover
-// @version      1.0
+// @version      1.1
 // @author       Jonas Otto
 // @match        https://*.adafruit.com/*
 // @match        http://*.adafruit.com/*
 //@grant none
 // ==/UserScript==
 
-document.getElementById("messaging-alert").style.display = 'none';
+document.getElementsByClassName("messaging-alert").item(0).style.display = 'none';
